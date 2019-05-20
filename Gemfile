@@ -71,3 +71,5 @@ source 'https://rails-assets.org' do
 end
 
 gem 'will_paginate', '~> 3.1', '>= 3.1.7'
+
+gem 'simple_form'
