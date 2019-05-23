@@ -20,6 +20,7 @@ class PlacesController < ApplicationController
 
     def show
         @place = Place.find(params[:id])
+        @comment = Comment.new
     end
 
     def edit
@@ -32,7 +33,7 @@ class PlacesController < ApplicationController
   
     def update
         @place = Place.find(params[:id])
-        
+
         if @place.user != current_user
             return render plain: 'Not Allowed', status: :forbidden
         end 
