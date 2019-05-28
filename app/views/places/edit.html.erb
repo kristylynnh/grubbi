@@ -4,6 +4,8 @@
     <%= f.input :name %>
     <%= f.input :address %>
     <%= f.input :description %>
+    <%= f.label :photo %>
+    <%= f.file_field :photo %>
     <br />
     <%= f.submit 'Update', class: 'btn btn-primary' %>
   <% end %>
